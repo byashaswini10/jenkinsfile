@@ -14,11 +14,6 @@ environment{
                 sh "mvn clean deploy"
             }
         }
-		stage('copy') {
-            steps {
-                cp *.*ar /home/ec2-user/git_practice/
-            }
-        }
 		
      }
 }
